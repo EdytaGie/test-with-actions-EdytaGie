@@ -67,7 +67,28 @@ def test_get_nth_fibonacci_one():
      result = get_nth_fibonacci(n)
 
      # Assert
-     assert result == 89
+     assert result == 55
 # trigger workflow
 # trigger workflow again
 # trigger PR workflow
+dummy_change = True
+def test_get_nth_fibonacci_two():
+    """Test Fibonacci for n=2."""
+    n = 2
+    result = get_nth_fibonacci(n)
+    assert result == 1
+
+
+
+def test_get_nth_fibonacci_five():
+    """Test Fibonacci for n=5."""
+    n = 5
+    result = get_nth_fibonacci(n)
+    assert result == 5
+
+
+def test_get_nth_fibonacci_two():
+    """Test Fibonacci for n=2."""
+    n = 2
+    result = get_nth_fibonacci(n)
+    assert result == 1
